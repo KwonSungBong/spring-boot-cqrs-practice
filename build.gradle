@@ -25,7 +25,7 @@ repositories {
 
 
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-data-mongodb-reactive')
+	compile('org.springframework.boot:spring-boot-starter-data-mongodb')
 	compile('org.springframework.boot:spring-boot-starter-webflux')
 	compile('org.axonframework:axon-spring-boot-starter:3.2')
 	compileOnly('org.projectlombok:lombok')
