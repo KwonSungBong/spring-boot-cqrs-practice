@@ -5,7 +5,8 @@ endpoints.sensitive: false
 
 spring:
   datasource:
-    url: jdbc:h2:file:./eventstore;MODE=Oracle;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:mem:TEST;MVCC=true;DB_CLOSE_DELAY=-1;MODE=Mysql
+#    url: jdbc:h2:file:./eventstore;MODE=Oracle;DB_CLOSE_ON_EXIT=FALSE
     username: sa
     password:
     driver-class-name: org.h2.Driver
@@ -18,3 +19,8 @@ spring:
     hibernate:
       ddl-auto: create-drop
       naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
