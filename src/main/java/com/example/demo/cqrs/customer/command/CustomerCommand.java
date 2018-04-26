@@ -1,4 +1,4 @@
-package com.example.demo.axon.customer.command;
+package com.example.demo.cqrs.customer.command;
 
 import lombok.Data;
 import org.axonframework.commandhandling.TargetAggregateIdentifier;
